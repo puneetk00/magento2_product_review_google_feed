@@ -1,8 +1,8 @@
 <?php
 
-namespace Exportaccelerator\Productfeed\Console\Command;
+namespace Pkgroup\Productfeed\Console\Command;
 
-use Exportaccelerator\Productfeed\Model\Feed\Exporter;
+use Pkgroup\Productfeed\Model\Feed\Exporter;
 use Magento\Framework\App\Area;
 use Magento\Framework\App\State;
 use Magento\Framework\Exception\LocalizedException;

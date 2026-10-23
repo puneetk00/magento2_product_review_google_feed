@@ -4,8 +4,8 @@
     <type name="Magento\Framework\Console\CommandListInterface">
         <arguments>
             <argument name="commands" xsi:type="array">
-                <item name="exportaccelerator_productreview_feed" xsi:type="object">
-                    Exportaccelerator\Productfeed\Console\Command\GenerateFeedCommand
+                <item name="pkgroup_productreview_feed" xsi:type="object">
+                    Pkgroup\Productfeed\Console\Command\GenerateFeedCommand
                 </item>
             </argument>
         </arguments>

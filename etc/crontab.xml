@@ -2,8 +2,8 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
-        <job name="exportaccelerator_productreview_feed_generate"
-            instance="Exportaccelerator\Productfeed\Cron\GenerateFeed"
+        <job name="pkgroup_productreview_feed_generate"
+            instance="Pkgroup\Productfeed\Cron\GenerateFeed"
             method="execute">
             <schedule>0 2 * * *</schedule>
         </job>

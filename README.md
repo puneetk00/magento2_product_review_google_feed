@@ -1,6 +1,6 @@
-# Exportaccelerator Productfeed for Magento 2
+# Pkgroup Productfeed for Magento 2
 
-`Exportaccelerator_Productfeed` exports existing Magento product reviews as a
+`Pkgroup_Productfeed` exports existing Magento product reviews as a
 Google Merchant Center Product Reviews XML 2.4 feed. It is a feed exporter: it
 does not collect reviews, send review invitation emails, provide review
 widgets, or moderate reviews.
@@ -56,23 +56,23 @@ feed diagnostics after processing.
 
 ### Install with Composer
 
-Make sure the Composer repository hosting `exportaccelerator/productfeed` is
+Make sure the Composer repository hosting `pkgroup/productfeed` is
 configured in your Magento project, then run:
 
 ```bash
-composer require exportaccelerator/productfeed
-php bin/magento module:enable Exportaccelerator_Productfeed
+composer require pkgroup/productfeed
+php bin/magento module:enable Pkgroup_Productfeed
 php bin/magento setup:upgrade
 php bin/magento cache:flush
 ```
 
 ### Install from this Magento project
 
-The module is located at `app/code/Exportaccelerator/Productfeed`. From the
+The module is located at `app/code/Pkgroup/Productfeed`. From the
 Magento project root, run:
 
 ```bash
-php bin/magento module:enable Exportaccelerator_Productfeed
+php bin/magento module:enable Pkgroup_Productfeed
 php bin/magento setup:upgrade
 php bin/magento cache:flush
 ```
@@ -80,7 +80,7 @@ php bin/magento cache:flush
 Confirm Magento sees the module:
 
 ```bash
-php bin/magento module:status Exportaccelerator_Productfeed
+php bin/magento module:status Pkgroup_Productfeed
 ```
 
 For a production deployment, run the normal Magento deployment steps for your
@@ -122,7 +122,7 @@ php bin/magento proudctreview:feed
 
 ## Automatic nightly generation
 
-The module registers `exportaccelerator_productreview_feed_generate` in
+The module registers `pkgroup_productreview_feed_generate` in
 Magento's `default` cron group with the schedule `0 2 * * *` (daily at 02:00
 in Magento cron's configured timezone). The job attempts to generate a static
 feed for every store view and logs success or failure for each store.
@@ -150,6 +150,13 @@ There are two ways to access a feed:
 The static file is updated by the CLI command or nightly cron. The dynamic
 route builds the XML during the HTTP request and does not read the generated
 static file.
+
+## Additional documentation
+
+- [User Guide (PDF)](./USER_GUIDE.pdf) | [Markdown](./USER_GUIDE.md)
+- [Reference Manual (PDF)](./REFERENCE_MANUAL.pdf) | [Markdown](./REFERENCE_MANUAL.md)
+- [Installation Guide (PDF)](./INSTALLATION_GUIDE.pdf) | [Markdown](./INSTALLATION_GUIDE.md)
+- [Release Notes](./RELEASE_NOTES.md)
 
 ## Troubleshooting
 

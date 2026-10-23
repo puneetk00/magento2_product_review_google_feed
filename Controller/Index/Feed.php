@@ -1,8 +1,8 @@
 <?php
 
-namespace Exportaccelerator\Productfeed\Controller\Index;
+namespace Pkgroup\Productfeed\Controller\Index;
 
-use Exportaccelerator\Productfeed\Model\Feed\Generator;
+use Pkgroup\Productfeed\Model\Feed\Generator;
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\Controller\Result\Raw;
 use Magento\Framework\Controller\ResultFactory;

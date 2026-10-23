@@ -1,6 +1,6 @@
 <?php
 
-namespace Exportaccelerator\Productfeed\Model\Feed;
+namespace Pkgroup\Productfeed\Model\Feed;
 
 use Magento\Catalog\Model\Product\Attribute\Source\Status as ProductStatus;
 use Magento\Catalog\Model\ResourceModel\Product\CollectionFactory as ProductCollectionFactory;

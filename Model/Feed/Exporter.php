@@ -1,6 +1,6 @@
 <?php
 
-namespace Exportaccelerator\Productfeed\Model\Feed;
+namespace Pkgroup\Productfeed\Model\Feed;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\Framework\Exception\LocalizedException;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Exportaccelerator\Productfeed\Cron;
+namespace Pkgroup\Productfeed\Cron;
 
-use Exportaccelerator\Productfeed\Model\Feed\Exporter;
+use Pkgroup\Productfeed\Model\Feed\Exporter;
 use Magento\Store\Model\StoreManagerInterface;
 use Psr\Log\LoggerInterface;
 
