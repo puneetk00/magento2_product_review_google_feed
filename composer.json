@@ -1,13 +1,19 @@
 {
   "name": "pkgroup/productfeed",
-  "description": "Product feed module for Magento 2",
+  "description": "Product feed module for Magento 2.4.6 and above",
   "type": "magento2-module",
+  "version": "1.0.0",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.1 || ^8.2 || ^8.3",
+    "magento/framework": "^103.0.6"
+  },
   "autoload": {
-    "psr-4": {
-      "Pkgroup\\Productfeed\\": ""
-    },
     "files": [
       "registration.php"
-    ]
+    ],
+    "psr-4": {
+      "Exportaccelerator\\Productfeed\\": ""
+    }
   }
 }
