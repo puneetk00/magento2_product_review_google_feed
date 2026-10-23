@@ -1,0 +1,1 @@
+# magento2_product_review_google_feed
