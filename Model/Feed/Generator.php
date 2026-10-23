@@ -16,7 +16,7 @@ use Psr\Log\LoggerInterface;
 class Generator
 {
     private const PRODUCT_ATTRIBUTES = ['brand', 'manufacturer', 'gtin', 'upc', 'mpn'];
-    private const PRODUCT_REVIEW_SCHEMA = 'http://www.google.com/shopping/reviews/schema/product/2.3/product_reviews.xsd';
+    private const PRODUCT_REVIEW_SCHEMA = 'http://www.google.com/shopping/reviews/schema/product/2.4/product_reviews.xsd';
 
     private ReviewCollectionFactory $reviewCollectionFactory;
     private ReviewFactory $reviewFactory;
@@ -52,7 +52,7 @@ class Generator
         $writer->startElement('feed');
         $writer->writeAttribute('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance');
         $writer->writeAttribute('xsi:noNamespaceSchemaLocation', self::PRODUCT_REVIEW_SCHEMA);
-        $writer->writeElement('version', '2.3');
+        $writer->writeElement('version', '2.4');
         $writer->startElement('publisher');
         $this->writeElement($writer, 'name', $store->getName());
         $writer->endElement();
