@@ -1,7 +1,7 @@
 # Exportaccelerator Productfeed for Magento 2
 
 `Exportaccelerator_Productfeed` exports existing Magento product reviews as a
-Google Merchant Center Product Reviews XML 2.3 feed. It is a feed exporter: it
+Google Merchant Center Product Reviews XML 2.4 feed. It is a feed exporter: it
 does not collect reviews, send review invitation emails, provide review
 widgets, or moderate reviews.
 
@@ -11,7 +11,7 @@ cron, or requested through the module's frontend route.
 
 ## Features
 
-- Exports Magento product reviews in Google's Product Reviews XML 2.3 format.
+- Exports Magento product reviews in Google's Product Reviews XML 2.4 format.
 - Creates a static XML file for each store view under
   `pub/productreview/feed/store-<store-id>.xml`.
 - Publishes the static file at
@@ -54,6 +54,18 @@ feed diagnostics after processing.
 
 ## Installation
 
+### Install with Composer
+
+Make sure the Composer repository hosting `exportaccelerator/productfeed` is
+configured in your Magento project, then run:
+
+```bash
+composer require exportaccelerator/productfeed
+php bin/magento module:enable Exportaccelerator_Productfeed
+php bin/magento setup:upgrade
+php bin/magento cache:flush
+```
+
 ### Install from this Magento project
 
 The module is located at `app/code/Exportaccelerator/Productfeed`. From the
@@ -78,9 +90,6 @@ environment, including dependency injection compilation when appropriate:
 php bin/magento setup:di:compile
 php bin/magento setup:static-content:deploy
 ```
-
-The module is registered as a local Magento module; its Composer metadata does
-not by itself install it from Packagist or another Composer repository.
 
 ## Generate feeds immediately
 
